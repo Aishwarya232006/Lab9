@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Photo Gallery</h1>
+        <p>Explore stunning images of animals and monuments.</p>
+    </header>
+    <div class="carousel">
+        <button class="prev">&#8249;</button>
+        <div class="carousel-track-container">
+            <div class="carousel-track">
+                <!-- Intro Slide for Animals -->
+                <div class="carousel-slide intro-slide">
+                    <h2>Animals</h2>
+                </div>
+                <!-- Animal Slides -->
+                <div class="carousel-slide">
+                    <img src="deers.jpg" alt="Deer">
+                </div>
+                <div class="carousel-slide">
+                    <img src="tiger.jpg" alt="Tiger">
+                </div>
+                <div class="carousel-slide">
+                    <img src="meerkat.jpeg" alt="Another Deer">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Racoon.jpeg" alt="Another Deer">
+                </div>
+                <div class="carousel-slide">
+                    <img src="goat.jpg" alt="Another Deer">
+                </div>
+                <!-- Blank Slide -->
+                <div class="carousel-slide intro-slide">
+                    <h2>Monuments</h2>
+                </div>
+                <!-- Monument Slides -->
+                <div class="carousel-slide">
+                    <img src="tajmahal.jpg" alt="Taj Mahal">
+                </div>
+                <div class="carousel-slide">
+                    <img src="eiffel.jpg" alt="Eiffel Tower">
+                </div>
+                <div class="carousel-slide">
+                    <img src="greatwall.jpg" alt="Great Wall of China">
+                </div>
+            </div>
+        </div>
+        <button class="next">&#8250;</button>
+    </div>
+    <footer>
+        <p>© Photo Gallery. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

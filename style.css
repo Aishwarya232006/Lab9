@@ -1,0 +1,132 @@
+/* General Styles */
+/* General Style Updates */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #8e44ad, #3498db);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: #fff;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background: black;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 500px; /* Set a fixed height for the carousel */
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure Images Stay Fully in Frame */
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the entire image stays within the container */
+    border-radius: 10px;
+    background-color: #fff; /* Optional: Add a background color to fill any empty space */
+}
+
+/* Intro Slides */
+.intro-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c3e50;
+    color: #ecf0f1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 500px; /* Match the carousel height */
+    flex-shrink: 0; /* Prevent shrinking when carousel slides */
+}
+
+/* Navigation Buttons */
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
