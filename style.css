@@ -73,6 +73,14 @@ footer {
     object-fit: contain; /* Ensures the entire image stays within the container */
     border-radius: 10px;
     background-color: #fff; /* Optional: Add a background color to fill any empty space */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.carousel-slide img:hover {
+    transform: scale(1.1); /* Slightly zoom in */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    border: 2px solid #3498db; /* Optional: Add a border on hover */
 }
 
 /* Intro Slides */
@@ -129,4 +137,3 @@ button.next:hover {
         opacity: 1;
     }
 }
-
